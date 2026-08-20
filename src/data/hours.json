@@ -1,0 +1,33 @@
+{
+  "location": {
+    "name": "Downtown Urban Bite",
+    "address": "123 Main Street",
+    "city": "Downtown District",
+    "state": "ST",
+    "zip": "12345",
+    "phone": "+1 (555) 123-4567",
+    "email": "hello@urbanbite.com"
+  },
+  "hours": {
+    "monday": "10:00 AM - 10:00 PM",
+    "tuesday": "10:00 AM - 10:00 PM",
+    "wednesday": "10:00 AM - 10:00 PM",
+    "thursday": "10:00 AM - 11:00 PM",
+    "friday": "10:00 AM - 11:00 PM",
+    "saturday": "11:00 AM - 11:00 PM",
+    "sunday": "11:00 AM - 9:00 PM"
+  },
+  "specialHours": [
+    {
+      "date": "2024-12-25",
+      "status": "Closed",
+      "note": "Christmas Day"
+    },
+    {
+      "date": "2024-01-01",
+      "status": "Closed",
+      "note": "New Year's Day"
+    }
+  ],
+  "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290255!2d-74.00601592345284!3d40.71282907134423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDC40c1JzI0LjEiTiA3NMKwMDAnMjEuNiJX!5e0!3m2!1sen!2sus!4v1234567890"
+}

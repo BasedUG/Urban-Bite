@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Urban Burger Classic",
+    "category": "Burgers",
+    "description": "Premium beef patty with aged cheddar, caramelized onions, and our signature sauce on a brioche bun",
+    "price": 12.99,
+    "image": "burger-classic.jpg",
+    "vegetarian": false,
+    "spicy": false
+  },
+  {
+    "id": 2,
+    "name": "Street Tacos Trio",
+    "category": "Tacos",
+    "description": "Three soft tortillas with grilled chicken, fresh cilantro, lime, and pickled onions",
+    "price": 10.99,
+    "image": "tacos-trio.jpg",
+    "vegetarian": false,
+    "spicy": true
+  },
+  {
+    "id": 3,
+    "name": "Crispy Fried Chicken",
+    "category": "Main",
+    "description": "Golden-fried chicken thighs served with house-made coleslaw and jalapeño cornbread",
+    "price": 14.99,
+    "image": "fried-chicken.jpg",
+    "vegetarian": false,
+    "spicy": false
+  },
+  {
+    "id": 4,
+    "name": "Green Goddess Salad",
+    "category": "Salads",
+    "description": "Mixed greens, avocado, green apple, pumpkin seeds, and creamy herb dressing",
+    "price": 11.99,
+    "image": "green-salad.jpg",
+    "vegetarian": true,
+    "spicy": false
+  },
+  {
+    "id": 5,
+    "name": "Veggie Delight Bowl",
+    "category": "Bowls",
+    "description": "Quinoa base with roasted vegetables, chickpeas, tahini drizzle, and microgreens",
+    "price": 10.99,
+    "image": "veggie-bowl.jpg",
+    "vegetarian": true,
+    "spicy": false
+  },
+  {
+    "id": 6,
+    "name": "Spicy Korean BBQ Wrap",
+    "category": "Wraps",
+    "description": "Grilled beef bulgogi, kimchi, gochujang mayo, and fresh vegetables in a whole wheat tortilla",
+    "price": 12.99,
+    "image": "korean-wrap.jpg",
+    "vegetarian": false,
+    "spicy": true
+  },
+  {
+    "id": 7,
+    "name": "Fresh Lemonade",
+    "category": "Drinks",
+    "description": "Freshly squeezed lemons, sparkling water, mint, and a touch of honey",
+    "price": 4.99,
+    "image": "lemonade.jpg",
+    "vegetarian": true,
+    "spicy": false
+  },
+  {
+    "id": 8,
+    "name": "Chocolate Fudge Brownies",
+    "category": "Desserts",
+    "description": "Rich, fudgy brownies with walnuts, served warm with vanilla ice cream",
+    "price": 6.99,
+    "image": "brownies.jpg",
+    "vegetarian": true,
+    "spicy": false
+  }
+]

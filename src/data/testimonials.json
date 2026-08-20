@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Sarah Johnson",
+    "rating": 5,
+    "text": "Urban Bite completely changed how I think about fast food! Every dish is fresh, flavorful, and made with obvious care. The staff is incredibly friendly too.",
+    "image": "testimonial-1.jpg",
+    "role": "Food Blogger"
+  },
+  {
+    "id": 2,
+    "name": "Marcus Chen",
+    "rating": 5,
+    "text": "Best street tacos I've had outside of Mexico City! The ingredients are top-notch and the flavors are authentic. I'm a regular now.",
+    "image": "testimonial-2.jpg",
+    "role": "Chef"
+  },
+  {
+    "id": 3,
+    "name": "Emma Rodriguez",
+    "rating": 4,
+    "text": "Love bringing my kids here. The healthy bowl options are great, and everything is so tasty. Perfect for a quick family lunch.",
+    "image": "testimonial-3.jpg",
+    "role": "Mom of 2"
+  },
+  {
+    "id": 4,
+    "name": "James Mitchell",
+    "rating": 5,
+    "text": "The Korean BBQ wrap is absolutely incredible. Complex flavors, perfectly balanced heat, and reasonable prices. Worth every penny!",
+    "image": "testimonial-4.jpg",
+    "role": "Food Enthusiast"
+  },
+  {
+    "id": 5,
+    "name": "Lisa Park",
+    "rating": 5,
+    "text": "Finally found a place that takes food allergies seriously. Great communication about ingredients and always friendly. Highly recommend!",
+    "image": "testimonial-5.jpg",
+    "role": "Nurse"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "brand": {
+    "name": "Urban Bites",
+    "tagline": "Fresh Food, Local Love",
+    "description": "Experience authentic urban & local cuisines. From street food favorites to chef-inspired dishes, Urban Bite brings the best flavors of the city to your table.",
+    "email": "hello@urbanbite.com",
+    "phone": "+1 (555) 123-4567",
+    "address": "123 Main Street, Downtown District, City, ST 12345",
+    "image": "/closeup-with-group-colored-pencils-selected-focus-red.jpg"
+  },
+  "hero": {
+    "title": "Urban Bites",
+    "subtitle": "Fresh, flavorful, and made with Heart",
+    "cta": "Order Now",
+    "image": "/4b8c75fefffa94cba413a152ee6c95cc.jpg"
+  },
+  "social": {
+    "instagram": "https://instagram.com/urbanbite",
+    "facebook": "https://facebook.com/urbanbite",
+    "twitter": "https://twitter.com/urbanbite"
+  }
+}
