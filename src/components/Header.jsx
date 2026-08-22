@@ -16,9 +16,9 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
         <Link to="/" className="flex items-center gap-2">
           <img
-            src="/Yellow%20and%20Black%20Fun%20Modern%20Restaurant%20Food%20Logo.svg"
+            src="/urban-bites-logo.svg"
             alt="Urban Bites logo"
-            className="w-16 h-16 object-contain rounded-lg"
+            className="w-16 h-16 object-cover rounded-lg bg-opacity-0"
           />
         </Link>
 
