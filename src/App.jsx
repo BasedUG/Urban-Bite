@@ -18,7 +18,11 @@ function App() {
     <Router>
       <div className="flex flex-col min-h-screen">
         <Header />
-        <main className="flex-grow">
+        <main className="flex-grow bg-fixed" style={{ 
+          backgroundImage: "url('/top-view-croissants-with-fruits-cheese-toast-copy-space-yellow-background-horizontal.jpg')", 
+          backgroundSize: 'cover', 
+          backgroundPosition: 'center' }}
+          >
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/menu" element={<Menu />} />

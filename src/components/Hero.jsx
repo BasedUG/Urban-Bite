@@ -17,13 +17,7 @@ export default function Hero() {
   }
 
   return (
-    <section 
-      className="relative text-white py-32 md:py-48 overflow-hidden bg-cover bg-center"
-      style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('${content.hero.image}')`,
-        backgroundAttachment: 'fixed'
-      }}
-    >
+    <section className="relative text-black py-32 md:py-48 overflow-hidden">
 
       <motion.div
         className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
