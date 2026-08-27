@@ -2,11 +2,11 @@ import { motion } from 'framer-motion'
 import ContactForm from '../components/ContactForm'
 import content from '../data/content.json'
 
-export default function Contact() {
+export default function Contact({ showHeader = true }) {
   return (
     <div className="min-h-screen bg-light">
       {/* Page Header */}
-      <section className="bg-gradient-to-r from-primary to-secondary text-white py-12 md:py-16">
+      {showHeader && <section className="bg-gradient-to-r from-primary to-secondary text-white py-12 md:py-16">
         <motion.div
           className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
           initial={{ opacity: 0, y: -20 }}
@@ -18,7 +18,7 @@ export default function Contact() {
             Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
           </p>
         </motion.div>
-      </section>
+      </section>}
 
       {/* Contact Info Cards */}
       <section className="py-16 md:py-24 bg-white">

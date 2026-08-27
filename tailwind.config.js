@@ -15,6 +15,8 @@ export default {
       },
       fontFamily: {
         sans: ['Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif'],
+        ubuntu: ['Ubuntu-Regular','Ubuntu-Bold','Ubuntu-Medium','Ubuntu-Light', 'sans-serif'],
+        asimovian: ['Asimovian-Regular', 'sans-serif'],
       },
     },
   },

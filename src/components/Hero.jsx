@@ -20,35 +20,34 @@ export default function Hero() {
     <section className="relative text-black py-32 md:py-48 overflow-hidden">
 
       <motion.div
-        className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
+        className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
       >
-        <motion.p
+        <motion.div
           variants={itemVariants}
-          className="text-accent font-semibold text-lg mb-2"
+          className="flex flex-wrap md:flex justify-center items-center"
         >
-          Welcome to
-        </motion.p>
-
-        <motion.h2
+          <motion.h3
           variants={itemVariants}
-          className="text-5xl md:text-7xl font-bold mb-4 leading-tight"
-        >
-          {content.hero.title}
-        </motion.h2>
-
-        <motion.p
-          variants={itemVariants}
-          className="text-xl md:text-2xl text-gray-100 mb-8 max-w-2xl mx-auto"
+          className="text-4xl md:text-5xl font-[ubuntu] font-bold mb-4 leading-tight"
         >
           {content.hero.subtitle}
-        </motion.p>
+        </motion.h3>
+
+        <motion.img 
+          variants={itemVariants}
+          src="/heart in hand.png"
+          alt="Heart in hand"
+          className="mb-0 md:mb-4 w-32 h-32 object-cover rounded-full"
+          >
+        </motion.img>
+        </motion.div>
 
         <motion.p
           variants={itemVariants}
-          className="text-lg text-gray-200 mb-8"
+          className="text-xl md:text-2xl text-gray-100 mb-8 max-w-2xl mx-auto capitalize"
         >
           {content.brand.description}
         </motion.p>

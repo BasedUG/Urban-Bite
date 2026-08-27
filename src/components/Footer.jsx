@@ -26,7 +26,6 @@ export default function Footer() {
               <li><Link to="/" className="hover:text-primary transition">Home</Link></li>
               <li><Link to="/menu" className="hover:text-primary transition">Menu</Link></li>
               <li><Link to="/about" className="hover:text-primary transition">About</Link></li>
-              <li><Link to="/contact" className="hover:text-primary transition">Contact</Link></li>
             </ul>
           </div>
 

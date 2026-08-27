@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import TestimonialCard from '../components/TestimonialCard'
 import testimonials from '../data/testimonials.json'
 import content from '../data/content.json'
+import Contact from './Contact'
 
 export default function About() {
   return (
@@ -30,7 +31,12 @@ export default function About() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <div className="w-full h-96 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center text-white font-bold text-2xl" style={{ backgroundImage: `url(${content.brand.image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+              <div className="w-full h-96 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center text-white font-bold text-2xl" 
+              style={{ 
+                backgroundImage: `url('src/assets/img/closeup-with-group-colored-pencils-selected-focus-red.jpg')`, 
+                backgroundSize: 'cover', 
+                backgroundPosition: 'center' 
+                }}>
                 {/*Brand Story Image*/}
               </div>
             </motion.div>
@@ -135,6 +141,8 @@ export default function About() {
           </a>
         </motion.div>
       </section>
+
+      <Contact showHeader={false} />
     </div>
   )
 }
