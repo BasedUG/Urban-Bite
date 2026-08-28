@@ -7,7 +7,13 @@ export default function Location() {
   return (
     <div className="min-h-screen bg-light">
       {/* Page Header */}
-      <section className="bg-gradient-to-r from-primary to-secondary text-white py-12 md:py-16">
+      <section className="bg-gradient-to-r from-primary to-secondary text-white py-12 md:py-16"
+      style={{
+        backgroundImage: `url('src/assets/img/pablo-garcia-saldana-lPQIndZz8Mo-unsplash.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }}
+      >
         <motion.div
           className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
           initial={{ opacity: 0, y: -20 }}
@@ -105,7 +111,7 @@ export default function Location() {
       </section>
 
       {/* Map Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-r from-primary to-secondary">
+      <section className="py-16 md:py-24 bg-gradient-to-tr from-gray-400 to-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             className="text-center mb-8"
@@ -181,7 +187,13 @@ export default function Location() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-r from-primary to-secondary text-white">
+      <section className="py-16 md:py-24 bg-gradient-to-r from-primary to-secondary text-white"
+      style={{
+        backgroundImage: `url('src/assets/img/pablo-garcia-saldana-lPQIndZz8Mo-unsplash.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }}
+      >
         <motion.div
           className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
           initial={{ opacity: 0, y: 20 }}

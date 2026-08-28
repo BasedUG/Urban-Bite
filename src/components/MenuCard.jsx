@@ -1,6 +1,9 @@
 import { motion } from 'framer-motion'
+import { useCart } from '../context/CartContext'
 
 export default function MenuCard({ item }) {
+  const { addToCart } = useCart()
+
   return (
     <motion.div
       whileHover={{ y: -8 }}
@@ -35,7 +38,7 @@ export default function MenuCard({ item }) {
           )}
         </div>
 
-        <button className="w-full mt-4 btn-primary bg-primary text-white">
+        <button onClick={() => addToCart(item)} className="w-full mt-4 btn-primary bg-primary text-white">
           Add to Order
         </button>
       </div>

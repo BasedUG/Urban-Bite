@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import content from '../data/content.json'
+import { FaHeart } from 'react-icons/fa6'
 
 export default function Hero() {
   const containerVariants = {
@@ -17,44 +18,31 @@ export default function Hero() {
   }
 
   return (
-    <section 
-      className="relative text-white py-32 md:py-48 overflow-hidden bg-cover bg-center"
-      style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('${content.hero.image}')`,
-        backgroundAttachment: 'fixed'
-      }}
-    >
+    <section className="relative text-black py-32 md:py-48 overflow-hidden mt-8">
 
       <motion.div
-        className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
+        className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
       >
-        <motion.p
+        <motion.div
           variants={itemVariants}
-          className="text-accent font-semibold text-lg mb-2"
+          className="flex flex-wrap md:flex justify-center items-center"
         >
-          Welcome to
-        </motion.p>
-
-        <motion.h2
+          <motion.h3
           variants={itemVariants}
-          className="text-5xl md:text-7xl font-bold mb-4 leading-tight"
-        >
-          {content.hero.title}
-        </motion.h2>
-
-        <motion.p
-          variants={itemVariants}
-          className="text-xl md:text-2xl text-gray-100 mb-8 max-w-2xl mx-auto"
+          className="text-4xl md:text-5xl font-[ubuntu] font-bold mb-4 leading-tight"
         >
           {content.hero.subtitle}
-        </motion.p>
+        </motion.h3>
+
+        <FaHeart className="text-red-500 text-3xl md:text-4xl mx-2 animate-pulse mb-4" />
+        </motion.div>
 
         <motion.p
           variants={itemVariants}
-          className="text-lg text-gray-200 mb-8"
+          className="text-xl md:text-2xl text-gray-100 mb-8 max-w-2xl mx-auto capitalize"
         >
           {content.brand.description}
         </motion.p>
@@ -66,7 +54,7 @@ export default function Hero() {
           <Link to="/menu" className="btn-primary bg-accent text-dark hover:bg-white">
             {content.hero.cta}
           </Link>
-          <Link to="/contact" className="btn-primary border-2 border-white bg-transparent hover:bg-white hover:text-dark">
+          <Link to="/about" className="btn-primary border-2 border-white bg-transparent hover:bg-white hover:text-dark">
             Learn More
           </Link>
         </motion.div>

@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Ubuntu-regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f5f5f5;
   color: #1a1a1a;
 }
@@ -97,3 +97,67 @@ body {
   background-color: #E8651F;
   border-radius: 2px;
 }
+
+/* Ubuntu Font Integration */
+@font-face {
+  font-family: 'Ubuntu-Regular';
+  src: url('src/assets/fonts/Ubuntu-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ubuntu-Bold';
+  src: url('src/assets/fonts/Ubuntu-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ubuntu-Medium';
+  src: url('src/assets/fonts/Ubuntu-Medium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ubuntu-Light';
+  src: url('src/assets/fonts/Ubuntu-Light.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Asimovian Font Integration */
+@font-face {
+  font-family: 'Asimovian-Regular';
+  src: url('src/assets/fonts/Asimovian-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* custom btn */
+.btn-custom {
+  @apply relative isolate text-purple-600 py-[10px] px-[20px] cursor-pointer font-bold bg-transparent overflow-hidden transition-all duration-1000 text-[17px] border-solid border-2 border-purple-500 capitalize rounded;
+}
+
+.btn-custom:hover {
+  @apply text-white;
+}
+
+.btn-custom::before {
+  @apply absolute left-[-40px] top-0 w-0 h-full bg-purple-500 z-[-1] transition-all duration-1000 ease-in-out;
+  content: '';
+  transform: skewX(45deg);
+}
+
+.btn-custom:hover::before {
+  @apply w-[calc(160%)];
+}
+
+
+

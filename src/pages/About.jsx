@@ -2,12 +2,19 @@ import { motion } from 'framer-motion'
 import TestimonialCard from '../components/TestimonialCard'
 import testimonials from '../data/testimonials.json'
 import content from '../data/content.json'
+import Contact from './Contact'
 
 export default function About() {
   return (
     <div className="min-h-screen bg-light">
       {/* Page Header */}
-      <section className="bg-gradient-to-r from-primary to-secondary text-white py-12 md:py-16">
+      <section className="bg-gradient-to-r from-primary to-secondary text-white py-12 md:py-16"
+      style={{
+        backgroundImage: `url('src/assets/img/abstract-networking-concept-still-life-arrangement.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }}
+      >
         <motion.div
           className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
           initial={{ opacity: 0, y: -20 }}
@@ -30,7 +37,12 @@ export default function About() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <div className="w-full h-96 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center text-white font-bold text-2xl" style={{ backgroundImage: `url(${content.brand.image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+              <div className="w-full h-96 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center text-white font-bold text-2xl" 
+              style={{ 
+                backgroundImage: `url('src/assets/img/caramel-JKJmdRDfPfk-unsplash.jpg')`, 
+                backgroundSize: 'cover', 
+                backgroundPosition: 'center' 
+                }}>
                 {/*Brand Story Image*/}
               </div>
             </motion.div>
@@ -56,7 +68,13 @@ export default function About() {
       </section>
 
       {/* Core Values */}
-      <section className="py-16 md:py-24 bg-gradient-to-r from-primary to-secondary text-white">
+      <section className="py-16 md:py-24 bg-gradient-to-r from-primary to-secondary text-white"
+      style={{
+        backgroundImage: `url('src/assets/img/abstract-networking-concept-still-life-arrangement.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             className="text-center mb-12"
@@ -119,15 +137,21 @@ export default function About() {
       </section>
 
       {/* Team CTA */}
-      <section className="py-16 md:py-24 bg-white">
+      <section className="py-16 md:py-24 bg-white"
+      style={{
+        backgroundImage: `url('src/assets/img/abstract-networking-concept-still-life-arrangement.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }}
+      >
         <motion.div
           className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl font-bold text-dark mb-4">Join Our Team</h2>
-          <p className="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
+          <h2 className="text-4xl font-bold text-light mb-4">Join Our Team</h2>
+          <p className="text-light text-lg mb-8 max-w-2xl mx-auto">
             Are you passionate about food and service? We're always looking for talented individuals who want to be part of the Urban Bite family. Check back soon for career opportunities!
           </p>
           <a href={`mailto:${content.brand.email}`} className="btn-primary">
@@ -135,6 +159,8 @@ export default function About() {
           </a>
         </motion.div>
       </section>
+
+      <Contact showHeader={false} />
     </div>
   )
 }
