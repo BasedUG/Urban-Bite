@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import ContactForm from '../components/ContactForm'
 import content from '../data/content.json'
+import { FaInstagram, FaFacebook, FaTwitter } from 'react-icons/fa6'
 
 export default function Contact({ showHeader = true }) {
   return (
@@ -75,6 +76,7 @@ export default function Contact({ showHeader = true }) {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
+            className='hidden'
           >
             <h2 className="text-3xl md:text-4xl font-bold text-dark text-center mb-8">Send Us a Message</h2>
             <ContactForm />
@@ -83,7 +85,13 @@ export default function Contact({ showHeader = true }) {
       </section>
 
       {/* Social Media Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-r from-primary to-secondary text-white">
+      <section className="py-16 md:py-24 bg-gradient-to-r from-primary to-secondary text-white"
+      style={{
+        backgroundImage: `url('src/assets/img/abstract-networking-concept-still-life-arrangement.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }}
+      >
         <motion.div
           className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
           initial={{ opacity: 0 }}
@@ -96,13 +104,13 @@ export default function Contact({ showHeader = true }) {
           </p>
           <div className="flex gap-6 justify-center flex-wrap">
             <a href={content.social.instagram} target="_blank" rel="noopener noreferrer" className="bg-white text-primary px-8 py-3 rounded-lg font-bold hover:bg-accent transition">
-              📸 Instagram
+              <FaInstagram className="text-3xl" />
             </a>
             <a href={content.social.facebook} target="_blank" rel="noopener noreferrer" className="bg-white text-primary px-8 py-3 rounded-lg font-bold hover:bg-accent transition">
-              👥 Facebook
+              <FaFacebook className="text-3xl" />
             </a>
             <a href={content.social.twitter} target="_blank" rel="noopener noreferrer" className="bg-white text-primary px-8 py-3 rounded-lg font-bold hover:bg-accent transition">
-              🐦 Twitter
+              <FaTwitter className="text-3xl" />
             </a>
           </div>
         </motion.div>

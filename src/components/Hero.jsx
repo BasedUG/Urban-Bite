@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import content from '../data/content.json'
+import { FaHeart } from 'react-icons/fa6'
 
 export default function Hero() {
   const containerVariants = {
@@ -17,7 +18,7 @@ export default function Hero() {
   }
 
   return (
-    <section className="relative text-black py-32 md:py-48 overflow-hidden">
+    <section className="relative text-black py-32 md:py-48 overflow-hidden mt-8">
 
       <motion.div
         className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center"
@@ -36,13 +37,7 @@ export default function Hero() {
           {content.hero.subtitle}
         </motion.h3>
 
-        <motion.img 
-          variants={itemVariants}
-          src="/heart in hand.png"
-          alt="Heart in hand"
-          className="mb-0 md:mb-4 w-32 h-32 object-cover rounded-full"
-          >
-        </motion.img>
+        <FaHeart className="text-red-500 text-3xl md:text-4xl mx-2 animate-pulse mb-4" />
         </motion.div>
 
         <motion.p
@@ -59,7 +54,7 @@ export default function Hero() {
           <Link to="/menu" className="btn-primary bg-accent text-dark hover:bg-white">
             {content.hero.cta}
           </Link>
-          <Link to="/contact" className="btn-primary border-2 border-white bg-transparent hover:bg-white hover:text-dark">
+          <Link to="/about" className="btn-primary border-2 border-white bg-transparent hover:bg-white hover:text-dark">
             Learn More
           </Link>
         </motion.div>

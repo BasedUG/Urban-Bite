@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Ubuntu-regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f5f5f5;
   color: #1a1a1a;
 }
@@ -139,3 +139,25 @@ body {
   font-style: normal;
   font-display: swap;
 }
+
+/* custom btn */
+.btn-custom {
+  @apply relative isolate text-purple-600 py-[10px] px-[20px] cursor-pointer font-bold bg-transparent overflow-hidden transition-all duration-1000 text-[17px] border-solid border-2 border-purple-500 capitalize rounded;
+}
+
+.btn-custom:hover {
+  @apply text-white;
+}
+
+.btn-custom::before {
+  @apply absolute left-[-40px] top-0 w-0 h-full bg-purple-500 z-[-1] transition-all duration-1000 ease-in-out;
+  content: '';
+  transform: skewX(45deg);
+}
+
+.btn-custom:hover::before {
+  @apply w-[calc(160%)];
+}
+
+
+

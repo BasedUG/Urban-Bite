@@ -10,19 +10,19 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
+            <div className="flex items-center gap-2 mb-2">
               <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm">UB</span>
               </div>
               <h3 className="text-lg font-bold">Urban Bite</h3>
             </div>
-            <p className="text-gray-400">{content.brand.tagline}</p>
+            <p className="text-gray-400 mb-4">{content.brand.tagline}</p>
           </div>
 
           {/* Quick Links */}
           <div>
             <h4 className="font-bold mb-4 text-primary">Quick Links</h4>
-            <ul className="space-y-2 text-gray-400">
+            <ul className="flex-col md:flex md:flex-row space-y-2 md:space-x-2 md:space-y-0  text-gray-400">
               <li><Link to="/" className="hover:text-primary transition">Home</Link></li>
               <li><Link to="/menu" className="hover:text-primary transition">Menu</Link></li>
               <li><Link to="/about" className="hover:text-primary transition">About</Link></li>

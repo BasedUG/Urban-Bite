@@ -25,7 +25,7 @@ export default function Home() {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-dark mb-4">Featured Dishes</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-dark mb-4">Spotlight Courses</h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
               Handpicked favorites that showcase the best of our urban cuisine
             </p>
@@ -136,6 +136,7 @@ export default function Home() {
           <Link to="/menu" className="btn-primary bg-accent text-dark hover:bg-white">
             Start Your Order
           </Link>
+          <button className="btn-custom">Learn More</button>
         </motion.div>
       </section>
     </div>
