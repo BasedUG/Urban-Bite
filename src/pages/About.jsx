@@ -10,7 +10,7 @@ export default function About() {
       {/* Page Header */}
       <section className="bg-gradient-to-r from-primary to-secondary text-white py-12 md:py-16"
       style={{
-        backgroundImage: `url('src/assets/img/abstract-networking-concept-still-life-arrangement.jpg')`,
+        backgroundImage: `url('/assets/img/abstract-networking-concept-still-life-arrangement.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center'
       }}
@@ -39,7 +39,7 @@ export default function About() {
             >
               <div className="w-full h-96 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center text-white font-bold text-2xl" 
               style={{ 
-                backgroundImage: `url('src/assets/img/caramel-JKJmdRDfPfk-unsplash.jpg')`, 
+                backgroundImage: `url('/assets/img/caramel-JKJmdRDfPfk-unsplash.jpg')`, 
                 backgroundSize: 'cover', 
                 backgroundPosition: 'center' 
                 }}>
@@ -70,7 +70,7 @@ export default function About() {
       {/* Core Values */}
       <section className="py-16 md:py-24 bg-gradient-to-r from-primary to-secondary text-white"
       style={{
-        backgroundImage: `url('src/assets/img/abstract-networking-concept-still-life-arrangement.jpg')`,
+        backgroundImage: `url('/assets/img/abstract-networking-concept-still-life-arrangement.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center'
       }}
@@ -139,7 +139,7 @@ export default function About() {
       {/* Team CTA */}
       <section className="py-16 md:py-24 bg-white"
       style={{
-        backgroundImage: `url('src/assets/img/abstract-networking-concept-still-life-arrangement.jpg')`,
+        backgroundImage: `url('/assets/img/abstract-networking-concept-still-life-arrangement.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center'
       }}

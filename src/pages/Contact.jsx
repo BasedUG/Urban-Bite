@@ -87,7 +87,7 @@ export default function Contact({ showHeader = true }) {
       {/* Social Media Section */}
       <section className="py-16 md:py-24 bg-gradient-to-r from-primary to-secondary text-white"
       style={{
-        backgroundImage: `url('src/assets/img/abstract-networking-concept-still-life-arrangement.jpg')`,
+        backgroundImage: `url('/assets/img/abstract-networking-concept-still-life-arrangement.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center'
       }}
