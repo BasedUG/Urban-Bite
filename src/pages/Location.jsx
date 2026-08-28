@@ -9,7 +9,7 @@ export default function Location() {
       {/* Page Header */}
       <section className="bg-gradient-to-r from-primary to-secondary text-white py-12 md:py-16"
       style={{
-        backgroundImage: `url('src/assets/img/pablo-garcia-saldana-lPQIndZz8Mo-unsplash.jpg')`,
+        backgroundImage: `url('/assets/img/pablo-garcia-saldana-lPQIndZz8Mo-unsplash.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center'
       }}
@@ -189,7 +189,7 @@ export default function Location() {
       {/* CTA Section */}
       <section className="py-16 md:py-24 bg-gradient-to-r from-primary to-secondary text-white"
       style={{
-        backgroundImage: `url('src/assets/img/pablo-garcia-saldana-lPQIndZz8Mo-unsplash.jpg')`,
+        backgroundImage: `url('/assets/img/pablo-garcia-saldana-lPQIndZz8Mo-unsplash.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center'
       }}

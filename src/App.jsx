@@ -21,7 +21,7 @@ function App() {
         <div className="flex flex-col min-h-screen">
           <Header />
           <main className="flex-grow bg-fixed" style={{ 
-          backgroundImage: "url('src/assets/img/top-view-croissants-with-fruits-cheese-toast-copy-space-yellow-background-horizontal.jpg')", 
+          backgroundImage: "url('/assets/img/top-view-croissants-with-fruits-cheese-toast-copy-space-yellow-background-horizontal.jpg')", 
           backgroundSize: 'cover', 
           backgroundPosition: 'center' }}
           >
