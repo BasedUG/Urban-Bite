@@ -11,7 +11,7 @@ export default function Cart() {
     <div className="min-h-screen bg-light py-28 md:py-36">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between mb-8">
-          <h1 className="text-4xl font-bold text-dark">Your Order</h1>
+          <h1 className="text-3xl md:text-4xl font-bold text-dark text-center">Your Order</h1>
           {cart.length > 0 && (
             <button onClick={clearCart} className="text-sm font-semibold text-gray-500 hover:text-primary">
               Clear order

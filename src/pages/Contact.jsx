@@ -85,13 +85,7 @@ export default function Contact({ showHeader = true }) {
       </section>
 
       {/* Social Media Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-r from-primary to-secondary text-white"
-      style={{
-        backgroundImage: `url('/assets/img/abstract-networking-concept-still-life-arrangement.jpg')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center'
-      }}
-      >
+      <section className="py-16 md:py-24 bg-custom text-white">
         <motion.div
           className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
           initial={{ opacity: 0 }}

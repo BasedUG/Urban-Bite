@@ -45,9 +45,9 @@ export default function Header() {
             alt="Urban Bites logo"
             className="w-[60px] h-[60px] object-cover rounded-lg bg-opacity-0"
           />
-          <span className="text-lg md:text-xl font-bold text-black subpixel-antialiased">
-            UrbanBite
-          </span>
+          <h6 className="text-lg md:text-xl font-bold text-black subpixel-antialiased">
+            UrbanBites
+          </h6>
         </Link>
 
         <div className="hidden md:flex items-center gap-[20px]">
@@ -70,16 +70,22 @@ export default function Header() {
 
         
 
-        <button
-          type="button"
-          onClick={() => setIsMenuOpen(open => !open)}
-          aria-label={isMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
-          aria-expanded={isMenuOpen}
-          aria-controls="mobile-navigation"
-          className="flex h-10 w-10 items-center justify-center text-black md:hidden"
-        >
-          {isMenuOpen ? <FaXmark className="text-2xl" /> : <FaBars className="text-2xl" />}
-        </button>
+        <div className='flex items-center gap-2 md:hidden'>
+          <button
+            type="button"
+            onClick={() => setIsMenuOpen(open => !open)}
+            aria-label={isMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+            aria-expanded={isMenuOpen}
+            aria-controls="mobile-navigation"
+            className="flex h-10 w-10 items-center justify-center text-black md:hidden"
+          >
+            {isMenuOpen ? <FaXmark className="text-2xl" /> : <FaBars className="text-2xl" />}
+          </button>
+          <Link to="/cart" aria-label={`Cart${itemCount ? `, ${itemCount} items` : ''}`} title="Cart" className="relative flex h-10 w-10 items-center justify-center text-2xl">
+            <FaCartShopping aria-hidden="true" />
+            {itemCount > 0 && <span className="absolute -right-1 -top-1 flex h-5 min-w-5 items-center justify-center rounded-full bg-primary px-1 text-xs font-bold text-white">{itemCount}</span>}
+          </Link>
+        </div>
       </nav>
 
       {isMenuOpen && (
