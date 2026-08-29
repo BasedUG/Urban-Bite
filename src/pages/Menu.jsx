@@ -17,17 +17,20 @@ export default function Menu() {
   return (
     <div className="min-h-screen bg-light">
       {/* Page Header */}
-      <section className="bg-gradient-to-r from-primary to-secondary text-white py-12 md:py-16">
+      <section className="text-white py-12 md:py-16"
+      style={{
+        backgroundImage: "url('/assets/img/vegetables-set-left-black-slate.jpg')", 
+        backgroundSize: 'cover', 
+        backgroundPosition: 'center'
+      }}
+      >
         <motion.div
           className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h1 className="text-5xl md:text-6xl font-bold mb-4">Our Menu</h1>
-          <p className="text-xl text-gray-100 max-w-2xl mx-auto">
-            Explore our carefully curated selection of fresh, flavorful dishes
-          </p>
+          <h6 className="text-4xl md:text-6xl font-bold mt-10">Our Menu</h6>
         </motion.div>
       </section>
 

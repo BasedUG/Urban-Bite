@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -9,18 +9,24 @@ import Location from './pages/Location'
 import Cart from './pages/Cart'
 import { CartProvider } from './context/CartContext'
 
-function App() {
-  // Scroll to top on route change
+function ScrollToTop() {
+  const { pathname } = useLocation()
+
   useEffect(() => {
     window.scrollTo(0, 0)
-  }, [])
+  }, [pathname])
 
+  return null
+}
+
+function App() {
   return (
     <Router>
+      <ScrollToTop />
       <CartProvider>
         <div className="flex flex-col min-h-screen">
           <Header />
-          <main className="flex-grow bg-fixed" style={{ 
+          <main className="flex-grow overflow-x-clip bg-fixed" style={{ 
           backgroundImage: "url('/assets/img/top-view-croissants-with-fruits-cheese-toast-copy-space-yellow-background-horizontal.jpg')", 
           backgroundSize: 'cover', 
           backgroundPosition: 'center' }}

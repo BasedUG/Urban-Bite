@@ -8,12 +8,8 @@ export default function About() {
   return (
     <div className="min-h-screen bg-light">
       {/* Page Header */}
-      <section className="bg-gradient-to-r from-primary to-secondary text-white py-12 md:py-16"
-      style={{
-        backgroundImage: `url('/assets/img/abstract-networking-concept-still-life-arrangement.jpg')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center'
-      }}
+      <section className="bg-custom text-white py-12 md:py-16"
+      
       >
         <motion.div
           className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
@@ -21,15 +17,12 @@ export default function About() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h1 className="text-5xl md:text-6xl font-bold mb-4">About Urban Bite</h1>
-          <p className="text-xl text-gray-100 max-w-2xl mx-auto">
-            Discover our story, mission, and the passion behind every dish
-          </p>
+          <h6 className="text-5xl md:text-6xl font-bold mt-[50px]">About Urban Bite</h6>
         </motion.div>
       </section>
 
       {/* Our Story */}
-      <section className="py-16 md:py-24 bg-white">
+      <section className="overflow-hidden py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -52,14 +45,14 @@ export default function About() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="text-4xl font-bold text-dark mb-4">Our Story</h2>
-              <p className="text-gray-600 text-lg mb-4">
+              <h2 className="text-4xl font-bold text-dark mb-4 text-center">Our Story</h2>
+              <p className="text-gray-600 text-lg mb-4 text-center">
                 Urban Bite was born from a simple dream: to bring authentic, flavorful food to the heart of the city. Founded by a team of passionate food lovers and experienced chefs, we believe that great food should be accessible, affordable, and absolutely delicious.
               </p>
-              <p className="text-gray-600 text-lg mb-4">
+              <p className="text-gray-600 text-lg mb-4 text-center">
                 Every ingredient is carefully selected from local suppliers who share our commitment to quality and sustainability. Every dish is prepared with the same care you'd expect from a fine dining restaurant, but in a casual, welcoming environment.
               </p>
-              <p className="text-gray-600 text-lg">
+              <p className="text-gray-600 text-lg text-center">
                 We're more than just a restaurant—we're part of the neighborhood. We source locally, support our community, and believe that food has the power to bring people together. When you eat at Urban Bite, you're not just getting a meal; you're joining a family.
               </p>
             </motion.div>
@@ -68,13 +61,7 @@ export default function About() {
       </section>
 
       {/* Core Values */}
-      <section className="py-16 md:py-24 bg-gradient-to-r from-primary to-secondary text-white"
-      style={{
-        backgroundImage: `url('/assets/img/abstract-networking-concept-still-life-arrangement.jpg')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center'
-      }}
-      >
+      <section className="py-16 md:py-24 bg-custom text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             className="text-center mb-12"
@@ -117,7 +104,7 @@ export default function About() {
           >
             <h2 className="text-4xl md:text-5xl font-bold text-dark mb-4">Loved by Our Community</h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              Read what our customers have to say about their Urban Bite experience
+              What our customers have to say about their Urban Bite experience
             </p>
           </motion.div>
 
@@ -137,13 +124,7 @@ export default function About() {
       </section>
 
       {/* Team CTA */}
-      <section className="py-16 md:py-24 bg-white"
-      style={{
-        backgroundImage: `url('/assets/img/abstract-networking-concept-still-life-arrangement.jpg')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center'
-      }}
-      >
+      <section className="py-16 md:py-24 bg-white bg-custom">
         <motion.div
           className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
           initial={{ opacity: 0, y: 20 }}

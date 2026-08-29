@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import content from '../data/content.json'
+import { FaInstagram, FaFacebook, FaTwitter } from 'react-icons/fa6'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -11,9 +12,11 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-2">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">UB</span>
-              </div>
+              <img
+                src="/assets/img/background-removed (1).svg"
+                alt="Urban Bites logo"
+                className="w-[30px] h-[30px] object-cover rounded-lg bg-gradient-to-r from-primary to-secondary bg-opacity-1"
+              />
               <h3 className="text-lg font-bold">Urban Bite</h3>
             </div>
             <p className="text-gray-400 mb-4">{content.brand.tagline}</p>
@@ -44,13 +47,13 @@ export default function Footer() {
             <h4 className="font-bold mb-4 text-primary">Follow Us</h4>
             <div className="flex gap-4">
               <a href={content.social.instagram} target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center hover:bg-secondary transition">
-                <span className="text-white">f</span>
+                <FaInstagram className="text-white" />
               </a>
               <a href={content.social.facebook} target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center hover:bg-secondary transition">
-                <span className="text-white">t</span>
+                <FaFacebook className="text-white" />
               </a>
               <a href={content.social.twitter} target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center hover:bg-secondary transition">
-                <span className="text-white">i</span>
+                <FaTwitter className="text-white" />
               </a>
             </div>
           </div>
